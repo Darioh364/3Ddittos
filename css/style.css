@@ -24,6 +24,9 @@
     height: 74px;
     width: 74px;
 }
+.navbar-collapse .nav-link {
+    color: black; /* Cambia el color del texto del navegador */
+  }
 
 
 /*Configuracion inical para mobile*/
