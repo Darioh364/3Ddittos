@@ -33,7 +33,8 @@
 
 
 
-/*Configuracion inical para mobile*/
+/*Configuracion inical para mobile */
+/*inicio*/
 .layout{
     height: 40rem;
 }
@@ -75,8 +76,11 @@ h2{
 }
 .boton-principal a{
    color: white;
-
 }
+.nav-item:hover {
+    background-color: #f06e9c;
+}
+
 .imagen-principal{
     height: 16rem;
     display: flex;
@@ -106,6 +110,29 @@ footer{
 }
 .footer-texto{
     display: none;
+}
+/*Estilo para los productos*/
+.titulo-producto{
+    display:flex;
+    justify-content:center;
+    font-family:"Staatliches", sans-serif; /*Importo otra fuente desde google font*/
+    font-size: 4rem;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.producto-galeria{
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Los elementos se expandirán igualmente */
+    min-width: 300px; /* Establece un ancho mínimo para cada elemento */
+    margin: 10px;   
+}
+.producto-galeria h5{
+    display: flex;
+    justify-content: center;     
+    font-family: "Source Sans 3", sans-serif;
 }
 
 

@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3Ddittos</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     
+    <link rel="stylesheet" href="../css/style.css">
+    <title>3Ddittos</title>
     <!-- Traemos las fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,127 +23,99 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="..\img\Logo3dditos.png" alt="3ddittos Impresiones 3D"> <!-- Logo de la página -->        
-            <h4>3ddittos</h4> <!-- Nombre de la página -->
-        </div>
-        <nav class="navegador">
-            <div class="formulario">
-                <ul>
-                    <li>
-                        <a href="../index.html"> <!-- Como Hago un boton de vuelta al inicio?? -->
-                            Inicio |
-                        </a>
+        <nav class="navbar navbar-expand-md bg-white">
+            <a class="navbar-brand" href="#">
+                <img src="../img/Logo3dditos.png" alt="3ddittos Impresiones 3D" class="logo" width="20%">
+            </a>
+            <button class="navbar-toggler custom-navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse posicion-nav" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
-                    <li>
-                        <a href="mates.html">
-                            Mates |
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chapitas.html">Chapitas</a>
                     </li>
-                    <li>
-                        <a href="chapitas.html">
-                            Chapitas |
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="llaveros.html">Llaveros</a>
                     </li>
-                    <li>
-                        <a href="llaveros.html">
-                            Llaveros |
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mates.html">Mates</a>
                     </li>
-                    <li>
-                        <a href="contacto.html">
-                            Contacto |
-                        </a>
-                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>       
                 </ul>
-            </div>
-            
-            <div class="inicio">
-                <ul>
-                    <li>
-                        <a class="especial" href="entrar.html"> 
-                            Entrar
-                        </a>
-                    </li>
-                    <li>
-                        <a class="registro" href="registro.html">
-                            Registrarse
-                        </a>
-                    </li>
-                </ul> 
-            </div>
+            </div>  
         </nav>
     </header>
 
     <main>
-        <h1 class="tituloProducto">CHAPITAS</h1>
+        <h1 class="titulo-producto">CHAPITAS</h1>
         <div class="menu">
-            <div class="boton1">
-                <a href="mates.html">
-                    <img src="..\img\flecha2.png" alt="Instagram">
-                </a>
-            </div>
-            <div>
-                <div class="bloque1">
-                    <div class="productoGaleria">
+                    <div class="producto-galeria">
                         <img src="..\img\Chapitas\1.jpeg" alt="Chapita1">
                         <h5>VER PRODUCTO</h5>
                     </div>
-                    <div class="productoGaleria">
+                    <div class="producto-galeria">
                         <img src="..\img\Chapitas\2.jpeg" alt="Chapita2">
                         <h5>VER PRODUCTO</h5>
                     </div>
-                    <div class="productoGaleria">
+                    <div class="producto-galeria">
                         <img src="..\img\Chapitas\3.jpeg" alt="Chapita3">
                         <h5>VER PRODUCTO</h5>
                     </div>
-                    <div class="productoGaleria">
+                    <div class="producto-galeria">
                         <img src="..\img\Chapitas\4.jpeg" alt="Chapita4">
                         <h5>VER PRODUCTO</h5>
                     </div>
-                </div>
-                <div class="bloque2">
-                    <div class="productoGaleria">
+                    <div class="producto-galeria">
                         <img src="..\img\Chapitas\5.jpeg" alt="Chapita5">
                         <h5>VER PRODUCTO</h5>
                     </div>
-                    <div class="productoGaleria">
+                    <div class="producto-galeria">
                         <img src="..\img\Chapitas\6.jpeg" alt="Chapita6">
                         <h5>VER PRODUCTO</h5>
                     </div>
-                    <div class="productoGaleria">
+                    <div class="producto-galeria">
                         <img src="..\img\Chapitas\7.jpeg" alt="Chapita7">
                         <h5>VER PRODUCTO</h5>
                     </div>
-                    <div class="productoGaleria">
+                    <div class="producto-galeria">
                         <img src="..\img\Chapitas\8.jpeg" alt="Chapita8">
                         <h5>VER PRODUCTO</h5>
                     </div>
-                </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-texto">
+            <p>Puerto Madryn, Chubut, CP 9120, ARG</p> 
+            <p>© 2024 Todos los derechos reservados.</p> <!--No se que se pone aca-->
+        </div>
+
+        <div class="footer-redes">
+            <div class="redes-sociales">
+                <a href="https://www.instagram.com/3d_dittos/">
+                    <img class="img-fluid" src="../img/LogoInstagram.png" alt="Instagram">
+                </a>
             </div>
-            
-            <div class="boton2">
-                <a href="llaveros.html">
-                    <img src="..\img\flecha1.png" alt="Instagram">
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/profile.php?id=100081932592753&locale=es_LA">
+                    <img class="img-fluid" src="../img/LogoFacebook.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/profile.php?id=100081932592753&locale=es_LA">
+                    <img class="img-fluid" src="../img/LogoFacebook.png" alt="Facebook">
                 </a>
             </div>
         </div>
-    </main>
-
-    <footer>
-        <div class="derechos">
-            <p>Puerto Madryn, Chubut, CP 9120, ARG <br>
-            © 2024 Todos los derechos reservados.</p> 
-        </div>
-        <div class="redesSociales">
-            <a href="https://www.instagram.com/3d_dittos/">
-                <img src="..\img\LogoInstagram.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100081932592753&locale=es_LA">
-                <img src="..\img\LogoFacebook.png" alt="Facebook">
-            </a>
-        </div>
     </footer>
+
 
 
 </body>
