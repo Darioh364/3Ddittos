@@ -21,7 +21,7 @@
     width: 50%; /* Ajusta el ancho del logo */
 }
 .logo {
-    height: 74px;
+    height: 60px;
     width: 74px;
 }
 .navbar-collapse .nav-link {
@@ -92,18 +92,46 @@ footer{
     display: flex;
     justify-content: center;
     gap: 2rem;
+
 }
 .footer-redes{
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
-.redes-sociales{
+.redes-sociales {
     display:flex;
     justify-content: center;
     height: 17vh;
     width: 7vh;
 }
+.redes-sociales-fija{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px; /* Puedes ajustar la posición top según tus necesidades */
+    right: 20px; /* Puedes ajustar la posición left según tus necesidades */
+    border: 1px solid #ccc;
+    width: 16rem; /* Cambia el ancho según tus necesidades */
+    height: auto;
+    position: fixed;
+}
+.redes-sociales-fija img{
+    width: 5rem;
+}
+.redes-sociales-fija p{
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+}
+.footer-redes-si{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
 /*Oculto los elementos que no quiero que se vean en Mobile*/
 .productos{
     display:none;
@@ -111,6 +139,10 @@ footer{
 .footer-texto{
     display: none;
 }
+.footer-redes{
+    display: none;
+}
+
 /*Estilo para los productos*/
 .titulo-producto{
     display:flex;
@@ -127,12 +159,30 @@ footer{
     flex-direction: column;
     flex: 1; /* Los elementos se expandirán igualmente */
     min-width: 300px; /* Establece un ancho mínimo para cada elemento */
-    margin: 10px;   
+    margin: 5px;   
+}
+.producto-galeria img{
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    width: 80%;
+    align-self: center;
+    border-radius: 20px;
 }
 .producto-galeria h5{
     display: flex;
     justify-content: center;     
     font-family: "Source Sans 3", sans-serif;
+
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 150%;
+    margin-top: 10px;
+    background-color: #f06e9c;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    width: 80%;
+    align-self: center;
+    padding: 5px;
 }
 
 
@@ -189,6 +239,7 @@ footer{
 /*Configuracion para pantalla de tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 /*Organizo los elementos de la pantalla principal con una grilla de grid*/
+
 .posicion-nav{
     display: flex;
     justify-content: end;
@@ -316,6 +367,16 @@ footer{
     gap:1.5rem;
     width: 30%;
 }
+.footer-redes-si{
+    display: flex;
+    gap:1.5rem;
+    width: 30%;
+}
+.footer-redes-si p{
+    display: flex;
+    justify-content:right;
+    margin-right: 7%;
+}
 
 /*Estilo para pagina de contacto*/
 .contenedor-1{
@@ -339,7 +400,10 @@ margin-bottom: 4rem;
   height: 20rem;
   transform: rotate(8deg);
 }
-
+/*Oculto el icono solo de whatsapp y hago que aparezca todo el footer*/
+.footer-redes-fija{
+    display: none;
+}
 
 }
 
@@ -468,6 +532,20 @@ footer{
     width: 30%;
     gap:1.5rem;
 }
+.footer-redes-si{
+    display: flex;
+    width: 30%;
+    gap:1.5rem;
+}
+.footer-redes-si p{
+    display: flex;
+    justify-content:right;
+    margin-right: 10%;
+}
+/*Oculto el icono solo de whatsapp y hago que aparezca todo el footer*/
+.footer-redes-fija{
+    display: none;
+}
 
 /*Estilo para pagina de contacto*/
 .contenedor-1{
@@ -484,6 +562,7 @@ footer{
     justify-content: center;
     align-items: center;
     width: 50%;
+    overflow: hidden;
 }
 .imagen-contacto img{
   margin-right: 5rem;
