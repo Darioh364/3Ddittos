@@ -1,9 +1,10 @@
 /* Pagina de contacto*/
+@import "../../base/variables.scss";
 main{
     div{
         .titulo-formulario {
             display: flex;
-            font-family: "Staatliches", sans-serif; /*Importo otra fuente desde google font*/
+            font-family: $fuente-principal; /*Importo otra fuente desde google font*/
             font-size: 4rem;
             justify-content: center;
           }
@@ -17,10 +18,10 @@ main{
                     flex-direction: column;
                     padding: 10px; /* Espaciado dentro de cada entrada */
                     label{
-                        font-family: "Staatliches", sans-serif;
+                        font-family: $fuente-principal;
                         font-size: 1.5rem;
                         margin-bottom: 5px;
-                        color: #f06e9c;
+                        color: $color-principal;
                         margin-left: 10%;
                     }
                     input{

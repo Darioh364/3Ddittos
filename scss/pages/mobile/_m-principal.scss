@@ -1,9 +1,10 @@
 /*principal*/
+@import "../../base/variables.scss";
 .layout {
     height: 40rem;
     .titulo h1 {
         display: flex;
-        font-family: "Source Sans 3", sans-serif; /*Importo fuente desde google fonts*/
+        font-family: $fuente-secundaria; /*Importo fuente desde google fonts*/
         font-size: 2rem;
         justify-content: center;
       }
@@ -30,21 +31,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: $color-secundario;
             height: 4rem;
             width: 16rem;
             font-size: 1.5rem;
-            background-color: #f06e9c; /*Color de fondo*/
+            background-color: $color-principal; /*Color de fondo*/
             text-decoration: none;
-            border: 1px solid #f06e9c; /*Color negro en los bordes*/
+            border: 1px solid $color-principal; /*Color negro en los bordes*/
             border-radius: 25px; /*Bordes redondeados */
             box-shadow: 0 4px 8px 0;
             margin-top: 10%;
         }
       }
       .boton-principal a:hover {
-        background-color: white;
-        color: #f06e9c;
+        background-color: $color-secundario;
+        color: $color-principal;
       }
       h2 {
         display: none;

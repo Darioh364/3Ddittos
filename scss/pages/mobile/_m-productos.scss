@@ -1,9 +1,10 @@
 /*Pagina productos*/
+@import "../../base/variables.scss";
 main{
     .titulo-producto{
     display: flex;
     justify-content: center;
-    font-family: "Staatliches", sans-serif; /*Importo otra fuente desde google font*/
+    font-family: $fuente-principal; /*Importo otra fuente desde google font*/
     font-size: 4rem;
   }
   .menu {
@@ -18,21 +19,21 @@ main{
         h5{
             display: flex;
             justify-content: center;
-            color: white;
-            font-family: "Source Sans 3", sans-serif;
+            color: $color-secundario;
+            font-family: $fuente-secundaria;
             font-size: 150%;
             margin-top: 10px;
-            background-color: #f06e9c;
+            background-color: $color-principal;
             border-radius: 30px;
             width: 80%;
             align-self: center;
             padding: 5px;
-            border: 1px solid #f06e9c;
+            border: 1px solid $color-principal;
             box-shadow: 0 4px 8px 0;
         }
         h5:hover{
-            background-color: white;
-            color: #f06e9c;
+            background-color: $color-secundario;
+            color: $color-principal;
         }
         img{
             object-fit: cover;
@@ -63,7 +64,7 @@ footer{
         }
         p{
             display: flex;
-            background-color: white;
+            background-color: $color-secundario;
             padding: 5px;
             border-radius: 10px;
             align-items: center;

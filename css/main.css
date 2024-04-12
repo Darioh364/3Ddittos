@@ -7,6 +7,8 @@
 }
 
 /*navegador*/
+/*Variables para los colores #f06e9c*/
+/*Variable para las fuentes*/
 /* CSS personalizado para el botón del menú en todas las paginas*/
 .custom-navbar-toggler {
   background-color: #f06e9c; /* Cambia el color de fondo del botón */
@@ -41,6 +43,8 @@
 
 /*ESTILOS PARA MOBILE FIRST*/
 /*principal*/
+/*Variables para los colores #f06e9c*/
+/*Variable para las fuentes*/
 .layout {
   height: 40rem;
 }
@@ -118,6 +122,8 @@ footer .footer-redes-si .redes-sociales {
 }
 
 /*Pagina productos*/
+/*Variables para los colores #f06e9c*/
+/*Variable para las fuentes*/
 main .titulo-producto {
   display: flex;
   justify-content: center;
@@ -193,6 +199,8 @@ footer .footer-redes {
 }
 
 /* Pagina de contacto*/
+/*Variables para los colores #f06e9c*/
+/*Variable para las fuentes*/
 main div .titulo-formulario {
   display: flex;
   font-family: "Staatliches", sans-serif; /*Importo otra fuente desde google font*/

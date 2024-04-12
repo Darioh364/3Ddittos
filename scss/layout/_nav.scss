@@ -1,10 +1,11 @@
 /*navegador*/
+@import "../base/variables.scss";
 
 /* CSS personalizado para el botón del menú en todas las paginas*/
 
 .custom-navbar-toggler {
-    background-color: #f06e9c; /* Cambia el color de fondo del botón */
-    border-color: #f06e9c; /* Cambia el color del borde del botón */
+    background-color: $color-principal; /* Cambia el color de fondo del botón */
+    border-color: $color-principal; /* Cambia el color del borde del botón */
 }
 
   /* Cambia el color del ícono del botón del menú */
@@ -26,5 +27,5 @@
  }
 
 .nav-item:hover {
-    background-color: #f06e9c;
+    background-color: $color-principal;
   }
