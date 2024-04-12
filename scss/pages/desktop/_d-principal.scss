@@ -1,7 +1,7 @@
 /*ESTILOS DE DESKTOP*/
+@import "../../base/mixin";
 .posicion-nav {
-    display: flex;
-    justify-content: end;
+    @include flex(flex, end);
 }
 
 main{
@@ -67,40 +67,30 @@ main{
         justify-items: center;
         .img-1 {
             width: 10rem;
-            height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
-            display: block; /* Asegura que la imagen se muestre como un bloque */
+            @include estilo-fotos-principal;
             grid-column: 1/2;
           }
           .img-2 {
-            width: 10rem;
-            height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
-            display: block; /* Asegura que la imagen se muestre como un bloque */
+            @include estilo-fotos-principal;
             grid-column: 2/3;
           }
           .img-3 {
-            width: 10rem;
-            height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
-            display: block; /* Asegura que la imagen se muestre como un bloque */
+            @include estilo-fotos-principal;
             grid-column: 3/4;
           }
           .img-4 {
-            width: 10rem;
-            height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
-            display: block; /* Asegura que la imagen se muestre como un bloque */
+            @include estilo-fotos-principal;
             grid-column: 4/5;
           }
           .img-5 {
-            width: 10rem;
-            height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
-            display: block; /* Asegura que la imagen se muestre como un bloque */
+            @include estilo-fotos-principal;
             grid-column: 5/6;
           }
     }
     }
 }
 footer{
-    display: flex;
-    justify-content: right;
+    @include flex(flex, right);
     height: 5rem;
     .footer-texto{
         display: flex;
@@ -108,8 +98,7 @@ footer{
         inline-size: none;
         width: 70%;
         p{
-            display: flex;
-            justify-content: right;
+            @include flex(flex, right);
             margin-right: 10%;
         }
     }
@@ -118,8 +107,7 @@ footer{
         width: 30%;
         gap: 1.5rem;
         p{
-            display: flex;
-            justify-content: right;
+            @include flex(flex, right);
             margin-right: 10%;
         }
         .redes-sociales{

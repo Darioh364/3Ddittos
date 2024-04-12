@@ -1,9 +1,9 @@
 /*Pagina productos*/
-@import "../../base/variables.scss";
+@import "../../base/variables";
+@import "../../base/mixin";
 main{
     .titulo-producto{
-    display: flex;
-    justify-content: center;
+    @include flex(flex, center);
     font-family: $fuente-principal; /*Importo otra fuente desde google font*/
     font-size: 4rem;
   }
@@ -17,8 +17,7 @@ main{
         min-width: 300px; /* Establece un ancho mínimo para cada elemento */
         margin: 5px;
         h5{
-            display: flex;
-            justify-content: center;
+            @include flex(flex, center);
             color: $color-secundario;
             font-family: $fuente-secundaria;
             font-size: 150%;
@@ -51,8 +50,7 @@ main{
 }
 footer{
     .redes-sociales-fija {
-        display: flex;
-        justify-content: center;
+        @include flex(flex, center);
         align-items: center;
         bottom: 20px;
         right: 20px;
@@ -71,8 +69,7 @@ footer{
         }
     }
     .footer-redes {
-        display: none;
-        justify-content: center;
+        @include flex(none, center);
         gap: 1rem;
       }
 }

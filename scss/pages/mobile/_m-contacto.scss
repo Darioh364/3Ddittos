@@ -1,12 +1,12 @@
 /* Pagina de contacto*/
 @import "../../base/variables.scss";
+@import "../../base/mixin";
 main{
     div{
         .titulo-formulario {
-            display: flex;
+            @include flex(flex, center);
             font-family: $fuente-principal; /*Importo otra fuente desde google font*/
             font-size: 4rem;
-            justify-content: center;
           }
     }
     .contenedor-1 {

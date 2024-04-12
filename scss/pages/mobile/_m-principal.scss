@@ -1,21 +1,20 @@
 /*principal*/
 @import "../../base/variables.scss";
+@import "../../base/mixin";
 .layout {
     height: 40rem;
     .titulo h1 {
-        display: flex;
+      @include flex(flex, center);
         font-family: $fuente-secundaria; /*Importo fuente desde google fonts*/
         font-size: 2rem;
-        justify-content: center;
       }
       .descripcion-inicial {
         text-align: center;
         font-size: 1.2rem;
       }
       .imagen-principal {
+        @include flex(flex, center);
         height: 16rem;
-        display: flex;
-        justify-content: center;
         padding: 5px 50px 10px 50px;
       }
       .imagen-principal img:hover{
@@ -23,14 +22,12 @@
         animation-duration: 1s;
       }
       .boton-principal {
+        @include flex(flex, center);
         height: 10%;
-        display: flex;
         align-items: center;
-        justify-content: center;
         a{
-            display: flex;
+            @include flex(flex, center);
             align-items: center;
-            justify-content: center;
             color: $color-secundario;
             height: 4rem;
             width: 16rem;
@@ -56,19 +53,16 @@
   }
   footer {
     margin-top: 0;
-    display: flex;
-    justify-content: center;
+    @include flex(flex, center);
     gap: 2rem;
     .footer-texto {
         display: none;
       }
       .footer-redes-si {
-        display: flex;
-        justify-content: center;
+        @include flex(flex, center);
         gap: 1rem;
         .redes-sociales {
-            display: flex;
-            justify-content: center;
+          @include flex(flex, center);
             height: 17vh;
             width: 7vh;
           }

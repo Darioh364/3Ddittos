@@ -45,23 +45,25 @@
 /*principal*/
 /*Variables para los colores #f06e9c*/
 /*Variable para las fuentes*/
+/*Mixin para algunas fotos*/
+/*Mixin para 2 propiedades de flex*/
 .layout {
   height: 40rem;
 }
 .layout .titulo h1 {
   display: flex;
+  justify-content: center;
   font-family: "Source Sans 3", sans-serif; /*Importo fuente desde google fonts*/
   font-size: 2rem;
-  justify-content: center;
 }
 .layout .descripcion-inicial {
   text-align: center;
   font-size: 1.2rem;
 }
 .layout .imagen-principal {
-  height: 16rem;
   display: flex;
   justify-content: center;
+  height: 16rem;
   padding: 5px 50px 10px 50px;
 }
 .layout .imagen-principal img:hover {
@@ -69,15 +71,15 @@
   animation-duration: 1s;
 }
 .layout .boton-principal {
-  height: 10%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  height: 10%;
+  align-items: center;
 }
 .layout .boton-principal a {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: white;
   height: 4rem;
   width: 16rem;
@@ -124,6 +126,8 @@ footer .footer-redes-si .redes-sociales {
 /*Pagina productos*/
 /*Variables para los colores #f06e9c*/
 /*Variable para las fuentes*/
+/*Mixin para algunas fotos*/
+/*Mixin para 2 propiedades de flex*/
 main .titulo-producto {
   display: flex;
   justify-content: center;
@@ -201,11 +205,13 @@ footer .footer-redes {
 /* Pagina de contacto*/
 /*Variables para los colores #f06e9c*/
 /*Variable para las fuentes*/
+/*Mixin para algunas fotos*/
+/*Mixin para 2 propiedades de flex*/
 main div .titulo-formulario {
   display: flex;
+  justify-content: center;
   font-family: "Staatliches", sans-serif; /*Importo otra fuente desde google font*/
   font-size: 4rem;
-  justify-content: center;
 }
 main .contenedor-1 {
   height: 68vh;
@@ -247,6 +253,8 @@ main .contenedor-1 .imagen-contactos {
 /*ESTILOS PARA TABLET*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /*Navegador para tablet en adelante*/
+  /*Mixin para algunas fotos*/
+  /*Mixin para 2 propiedades de flex*/
   .posicion-nav {
     display: flex;
     justify-content: end;
@@ -370,6 +378,8 @@ main .contenedor-1 .imagen-contactos {
     display: flex;
   }
   /*Estilo para pagina de contacto en tablet*/
+  /*Mixin para algunas fotos*/
+  /*Mixin para 2 propiedades de flex*/
   main .contenedor-1 {
     display: flex;
     width: 100%;
@@ -423,6 +433,8 @@ main .contenedor-1 .imagen-contactos {
 /*ESTILOS PARA DESKTOP*/
 @media only screen and (min-width: 1025px) {
   /*ESTILOS DE DESKTOP*/
+  /*Mixin para algunas fotos*/
+  /*Mixin para 2 propiedades de flex*/
   .posicion-nav {
     display: flex;
     justify-content: end;
@@ -491,6 +503,7 @@ main .contenedor-1 .imagen-contactos {
   }
   main .layout .productos .img-1 {
     width: 10rem;
+    width: 10rem;
     height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
     display: block; /* Asegura que la imagen se muestre como un bloque */
     grid-column: 1/2;
@@ -549,6 +562,8 @@ main .contenedor-1 .imagen-contactos {
     display: flex;
   }
   /*Estilo para pagina de contacto en desktop*/
+  /*Mixin para algunas fotos*/
+  /*Mixin para 2 propiedades de flex*/
   main .contenedor-1 {
     display: flex;
     width: 100%;

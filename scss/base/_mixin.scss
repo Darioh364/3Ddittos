@@ -1,0 +1,11 @@
+/*Mixin para algunas fotos*/
+@mixin estilo-fotos-principal{
+    width: 10rem;
+    height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+}
+/*Mixin para 2 propiedades de flex*/
+@mixin flex ($display, $justify){
+    display: $display;
+    justify-content: $justify;
+}
