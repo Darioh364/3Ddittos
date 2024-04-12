@@ -1,0 +1,53 @@
+/* Pagina de contacto*/
+main{
+    div{
+        .titulo-formulario {
+            display: flex;
+            font-family: "Staatliches", sans-serif; /*Importo otra fuente desde google font*/
+            font-size: 4rem;
+            justify-content: center;
+          }
+    }
+    .contenedor-1 {
+        height: 68vh;
+        .contenedor-2{
+            form{
+                .direccion-entrada {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px; /* Espaciado dentro de cada entrada */
+                    label{
+                        font-family: "Staatliches", sans-serif;
+                        font-size: 1.5rem;
+                        margin-bottom: 5px;
+                        color: #f06e9c;
+                        margin-left: 10%;
+                    }
+                    input{
+                        font-size: 1.2rem;
+                        width: 20rem;
+                        height: 3rem;
+                        margin-left: 10%;
+                        margin-top: 0.5;
+                    }
+                }
+                .entrada-grande{
+                    input{
+                        display: flex;
+                        font-size: 1.2rem;
+                        width: 20rem;
+                        height: 7rem;
+                    }
+                }
+                .boton {
+                    margin-top: 1rem;
+                    margin-left: 5%;
+                    font-size: 1.2rem;
+                  }
+            }
+        }
+        .imagen-contactos{
+            display:none;
+          }        
+      }
+}

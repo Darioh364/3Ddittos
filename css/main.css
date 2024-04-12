@@ -1,0 +1,595 @@
+@charset "UTF-8";
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*navegador*/
+/* CSS personalizado para el botón del menú en todas las paginas*/
+.custom-navbar-toggler {
+  background-color: #f06e9c; /* Cambia el color de fondo del botón */
+  border-color: #f06e9c; /* Cambia el color del borde del botón */
+}
+
+/* Cambia el color del ícono del botón del menú */
+.custom-navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-brand {
+  width: 50%; /* Ajusta el ancho del logo */
+}
+
+.logo {
+  height: 60px;
+  width: 74px;
+}
+
+.navbar-collapse .nav-link {
+  color: black; /* Cambia el color del texto del navegador */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1.5rem; /* Puedes ajustar este valor según sea necesario */
+}
+
+.nav-item:hover {
+  background-color: #f06e9c;
+}
+
+/*ESTILOS PARA MOBILE FIRST*/
+/*principal*/
+.layout {
+  height: 40rem;
+}
+.layout .titulo h1 {
+  display: flex;
+  font-family: "Source Sans 3", sans-serif; /*Importo fuente desde google fonts*/
+  font-size: 2rem;
+  justify-content: center;
+}
+.layout .descripcion-inicial {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.layout .imagen-principal {
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+  padding: 5px 50px 10px 50px;
+}
+.layout .imagen-principal img:hover {
+  animation-name: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
+}
+.layout .boton-principal {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.layout .boton-principal a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 4rem;
+  width: 16rem;
+  font-size: 1.5rem;
+  background-color: #f06e9c; /*Color de fondo*/
+  text-decoration: none;
+  border: 1px solid #f06e9c; /*Color negro en los bordes*/
+  border-radius: 25px; /*Bordes redondeados */
+  box-shadow: 0 4px 8px 0;
+  margin-top: 10%;
+}
+.layout .boton-principal a:hover {
+  background-color: white;
+  color: #f06e9c;
+}
+.layout h2 {
+  display: none;
+}
+.layout .productos {
+  display: none;
+}
+
+footer {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+footer .footer-texto {
+  display: none;
+}
+footer .footer-redes-si {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+footer .footer-redes-si .redes-sociales {
+  display: flex;
+  justify-content: center;
+  height: 17vh;
+  width: 7vh;
+}
+
+/*Pagina productos*/
+main .titulo-producto {
+  display: flex;
+  justify-content: center;
+  font-family: "Staatliches", sans-serif; /*Importo otra fuente desde google font*/
+  font-size: 4rem;
+}
+main .menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .menu .producto-galeria {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Los elementos se expandirán igualmente */
+  min-width: 300px; /* Establece un ancho mínimo para cada elemento */
+  margin: 5px;
+}
+main .menu .producto-galeria h5 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 150%;
+  margin-top: 10px;
+  background-color: #f06e9c;
+  border-radius: 30px;
+  width: 80%;
+  align-self: center;
+  padding: 5px;
+  border: 1px solid #f06e9c;
+  box-shadow: 0 4px 8px 0;
+}
+main .menu .producto-galeria h5:hover {
+  background-color: white;
+  color: #f06e9c;
+}
+main .menu .producto-galeria img {
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  width: 80%;
+  align-self: center;
+  border-radius: 20px;
+}
+main .menu .producto-galeria img:hover {
+  animation-name: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
+}
+
+footer .redes-sociales-fija {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  right: 20px;
+  width: 16rem;
+  height: auto;
+  position: fixed;
+}
+footer .redes-sociales-fija img {
+  width: 5rem;
+}
+footer .redes-sociales-fija p {
+  display: flex;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  align-items: center;
+}
+footer .footer-redes {
+  display: none;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Pagina de contacto*/
+main div .titulo-formulario {
+  display: flex;
+  font-family: "Staatliches", sans-serif; /*Importo otra fuente desde google font*/
+  font-size: 4rem;
+  justify-content: center;
+}
+main .contenedor-1 {
+  height: 68vh;
+}
+main .contenedor-1 .contenedor-2 form .direccion-entrada {
+  display: flex;
+  flex-direction: column;
+  padding: 10px; /* Espaciado dentro de cada entrada */
+}
+main .contenedor-1 .contenedor-2 form .direccion-entrada label {
+  font-family: "Staatliches", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #f06e9c;
+  margin-left: 10%;
+}
+main .contenedor-1 .contenedor-2 form .direccion-entrada input {
+  font-size: 1.2rem;
+  width: 20rem;
+  height: 3rem;
+  margin-left: 10%;
+  margin-top: 0.5;
+}
+main .contenedor-1 .contenedor-2 form .entrada-grande input {
+  display: flex;
+  font-size: 1.2rem;
+  width: 20rem;
+  height: 7rem;
+}
+main .contenedor-1 .contenedor-2 form .boton {
+  margin-top: 1rem;
+  margin-left: 5%;
+  font-size: 1.2rem;
+}
+main .contenedor-1 .imagen-contactos {
+  display: none;
+}
+
+/*ESTILOS PARA TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /*Navegador para tablet en adelante*/
+  .posicion-nav {
+    display: flex;
+    justify-content: end;
+  }
+  main .layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr) 0.5fr 2.3fr;
+    grid-gap: 10px;
+  }
+  main .layout .titulo {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  main .layout .titulo h1 {
+    font-size: 5vw;
+  }
+  main .layout .grid-item {
+    width: 100%;
+    height: auto;
+  }
+  main .layout .descripcion-inicial {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/5;
+  }
+  main .layout .imagen-principal {
+    display: grid;
+    grid-column: 3/5;
+    grid-row: 1/4;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor padre */
+    height: 100%;
+    overflow: hidden; /*Borra la imagen que sobresale del contenedor*/
+  }
+  main .layout .imagen-principal img {
+    width: 90%;
+    height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    justify-self: center;
+    align-self: center;
+  }
+  main .layout .boton-principal {
+    display: grid;
+    font-size: 4vw;
+    height: 100%;
+    grid-column: 3/5;
+    grid-row: 4/5;
+    padding: 1rem;
+  }
+  main .layout .boton-principal a {
+    margin: 0;
+  }
+  main .layout h2 {
+    display: grid;
+    grid-row: 5/6;
+    grid-column: 1/5;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #f06e9c;
+  }
+  main .layout .productos {
+    overflow: overlay;
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 6/7;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+  main .layout .productos .img-5 {
+    display: none;
+  }
+  main .layout .productos .img-1 {
+    width: 10rem;
+    height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    grid-column: 1/2;
+  }
+  main .layout .productos .img-2 {
+    width: 10rem;
+    height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    grid-column: 2/3;
+  }
+  main .layout .productos .img-3 {
+    width: 10rem;
+    height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    grid-column: 3/4;
+  }
+  main .layout .productos .img-4 {
+    width: 10rem;
+    height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    grid-column: 4/5;
+  }
+  footer {
+    display: flex;
+    justify-content: right;
+    height: 5rem;
+  }
+  footer .footer-texto {
+    display: flex;
+    flex-direction: column;
+    inline-size: none;
+    width: 70%;
+  }
+  footer .footer-texto p {
+    display: flex;
+    justify-content: right;
+    margin-right: 7%;
+  }
+  footer .footer-redes-si {
+    display: flex;
+    gap: 1.5rem;
+    width: 30%;
+  }
+  footer .footer-redes-si .redes-sociales {
+    display: flex;
+  }
+  /*Estilo para pagina de contacto en tablet*/
+  main .contenedor-1 {
+    display: flex;
+    width: 100%;
+    height: 15%;
+  }
+  main .contenedor-1 .contenedor-2 {
+    display: flex;
+    width: 50%;
+  }
+  main .contenedor-1 .imagen-contactos {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  main .contenedor-1 .imagen-contactos img {
+    display: flex;
+    margin-bottom: 4rem;
+    width: 25rem;
+    height: 20rem;
+    transform: rotate(8deg);
+  }
+  footer {
+    display: flex;
+    justify-content: right;
+    height: 5rem;
+  }
+  footer .footer-texto {
+    display: flex;
+    flex-direction: column;
+    inline-size: none;
+    width: 70%;
+  }
+  footer .footer-texto p {
+    display: flex;
+    justify-content: right;
+    margin-right: 7%;
+  }
+  footer .footer-redes {
+    display: flex;
+    gap: 1.5rem;
+    width: 30%;
+  }
+  footer .footer-redes .redes-sociales {
+    display: flex;
+  }
+  footer .redes-sociales-fija {
+    display: none;
+  }
+}
+/*ESTILOS PARA DESKTOP*/
+@media only screen and (min-width: 1025px) {
+  /*ESTILOS DE DESKTOP*/
+  .posicion-nav {
+    display: flex;
+    justify-content: end;
+  }
+  main .layout {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr) 0.5fr 2.3fr;
+    grid-gap: 10px;
+  }
+  main .layout .grid-item {
+    width: 100%;
+    height: auto;
+  }
+  main .layout .titulo {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  main .layout .descripcion-inicial {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+  main .layout .imagen-principal {
+    display: grid;
+    grid-column: 3/6;
+    grid-row: 1/5;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor padre */
+    height: 100%;
+    overflow: hidden; /*Borra la imagen que sobresale del contenedor*/
+  }
+  main .layout .imagen-principal img {
+    width: 68%;
+    height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    justify-self: end;
+    align-self: center;
+    margin-right: 4rem;
+  }
+  main .layout .boton-principal {
+    display: grid;
+    font-size: 4vw;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    padding: 1rem;
+  }
+  main .layout h2 {
+    display: grid;
+    grid-row: 5/6;
+    grid-column: 2/5;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #f06e9c;
+  }
+  main .layout .productos {
+    overflow: overlay;
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 6/7;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+  main .layout .productos .img-1 {
+    width: 10rem;
+    height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    grid-column: 1/2;
+  }
+  main .layout .productos .img-2 {
+    width: 10rem;
+    height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    grid-column: 2/3;
+  }
+  main .layout .productos .img-3 {
+    width: 10rem;
+    height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    grid-column: 3/4;
+  }
+  main .layout .productos .img-4 {
+    width: 10rem;
+    height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    grid-column: 4/5;
+  }
+  main .layout .productos .img-5 {
+    width: 10rem;
+    height: auto; /* Establecer la altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    grid-column: 5/6;
+  }
+  footer {
+    display: flex;
+    justify-content: right;
+    height: 5rem;
+  }
+  footer .footer-texto {
+    display: flex;
+    flex-direction: column;
+    inline-size: none;
+    width: 70%;
+  }
+  footer .footer-texto p {
+    display: flex;
+    justify-content: right;
+    margin-right: 10%;
+  }
+  footer .footer-redes-si {
+    display: flex;
+    width: 30%;
+    gap: 1.5rem;
+  }
+  footer .footer-redes-si p {
+    display: flex;
+    justify-content: right;
+    margin-right: 10%;
+  }
+  footer .footer-redes-si .redes-sociales {
+    display: flex;
+  }
+  /*Estilo para pagina de contacto en desktop*/
+  main .contenedor-1 {
+    display: flex;
+    width: 100%;
+    height: 85%;
+  }
+  main .contenedor-1 .contenedor-2 {
+    display: flex;
+    width: 50%;
+  }
+  main .contenedor-1 .imagen-contactos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    overflow: hidden;
+  }
+  main .contenedor-1 .imagen-contactos img {
+    margin-right: 5rem;
+    margin-bottom: 4rem;
+    width: 85%;
+    transform: rotate(8deg);
+  }
+  footer {
+    display: flex;
+    justify-content: right;
+    height: 5rem;
+  }
+  footer .footer-texto {
+    display: flex;
+    flex-direction: column;
+    inline-size: none;
+    width: 70%;
+  }
+  footer .footer-texto p {
+    display: flex;
+    justify-content: right;
+    margin-right: 10%;
+  }
+  footer .footer-redes {
+    display: flex;
+    gap: 1.5rem;
+    width: 30%;
+  }
+  footer .footer-redes .redes-sociales {
+    display: flex;
+  }
+  footer .redes-sociales-fija {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

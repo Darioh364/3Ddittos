@@ -1,0 +1,109 @@
+/*Configuracion inical para mobile */
+/*principal*/
+.layout{
+    height: 40rem;
+}
+.titulo h1{
+    display: flex;
+    font-family: "Source Sans 3", sans-serif; /*Importo fuente desde google fonts*/
+    font-size: 2rem;
+    justify-content: center;
+}
+.descripcion-inicial{
+    text-align:center;
+    font-size: 1.2rem;
+
+}
+h2{
+    display: none;
+}
+.boton-principal{
+    height: 10%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.boton-principal a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;  
+    width: 16rem;
+    font-size: 1.5rem;
+    background-color:#f06e9c; /*Color de fondo*/
+    text-decoration: none;
+    border: 1px solid #f06e9c;   /*Color negro en los bordes*/
+    border-radius: 25px; /*Bordes redondeados */
+    box-shadow: 0 4px 8px 0;
+    margin-top: 10%;
+
+}
+.boton-principal a{
+   color: white;
+}
+.nav-item:hover {
+    background-color: #f06e9c;
+}
+
+.imagen-principal{
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    padding: 5px 50px 10px 50px; 
+}
+footer{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.footer-redes{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.redes-sociales {
+    display:flex;
+    justify-content: center;
+    height: 17vh;
+    width: 7vh;
+}
+.redes-sociales-fija{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px; 
+    right: 20px; 
+    width: 16rem; 
+    height: auto;
+    position: fixed;
+}
+.redes-sociales-fija img{
+    width: 5rem;
+}
+.redes-sociales-fija p{
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+}
+.footer-redes-si{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+/*Oculto los elementos que no quiero que se vean en Mobile*/
+.productos{
+    display:none;
+}
+.footer-texto{
+    display: none;
+}
+.footer-redes{
+    display: none;
+}

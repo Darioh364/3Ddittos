@@ -1,0 +1,42 @@
+
+/*Estilo para los productos*/
+.titulo-producto{
+    display:flex;
+    justify-content:center;
+    font-family:"Staatliches", sans-serif; /*Importo otra fuente desde google font*/
+    font-size: 4rem;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.producto-galeria{
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Los elementos se expandirán igualmente */
+    min-width: 300px; /* Establece un ancho mínimo para cada elemento */
+    margin: 5px;   
+}
+.producto-galeria img{
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    width: 80%;
+    align-self: center;
+    border-radius: 20px;
+}
+.producto-galeria h5{
+    display: flex;
+    justify-content: center;     
+    font-family: "Source Sans 3", sans-serif;
+
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 150%;
+    margin-top: 10px;
+    background-color: #f06e9c;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    width: 80%;
+    align-self: center;
+    padding: 5px;
+}

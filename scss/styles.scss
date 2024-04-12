@@ -1,0 +1,18 @@
+@import "base/reset";
+@import "layout/nav";
+/*ESTILOS PARA MOBILE FIRST*/
+@import "pages/mobile/m-principal";
+@import "pages/mobile/m-productos";
+@import "pages/mobile/m-contacto";
+/*ESTILOS PARA TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    @import "pages/tablet/t-principal";
+    @import "pages/tablet/t-contacto";
+    @import "pages/tablet/t-productos";
+}
+/*ESTILOS PARA DESKTOP*/
+@media only screen and (min-width: 1025px){
+    @import "pages/desktop/d-principal";
+    @import "pages/desktop/d-contacto";
+    @import "pages/desktop/d-productos"
+}

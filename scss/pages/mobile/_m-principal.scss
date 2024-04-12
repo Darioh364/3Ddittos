@@ -1,0 +1,75 @@
+/*principal*/
+.layout {
+    height: 40rem;
+    .titulo h1 {
+        display: flex;
+        font-family: "Source Sans 3", sans-serif; /*Importo fuente desde google fonts*/
+        font-size: 2rem;
+        justify-content: center;
+      }
+      .descripcion-inicial {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      .imagen-principal {
+        height: 16rem;
+        display: flex;
+        justify-content: center;
+        padding: 5px 50px 10px 50px;
+      }
+      .imagen-principal img:hover{
+        animation-name: pulse; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s;
+      }
+      .boton-principal {
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            height: 4rem;
+            width: 16rem;
+            font-size: 1.5rem;
+            background-color: #f06e9c; /*Color de fondo*/
+            text-decoration: none;
+            border: 1px solid #f06e9c; /*Color negro en los bordes*/
+            border-radius: 25px; /*Bordes redondeados */
+            box-shadow: 0 4px 8px 0;
+            margin-top: 10%;
+        }
+      }
+      .boton-principal a:hover {
+        background-color: white;
+        color: #f06e9c;
+      }
+      h2 {
+        display: none;
+      }
+      .productos {
+        display: none;
+      }
+  }
+  footer {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    .footer-texto {
+        display: none;
+      }
+      .footer-redes-si {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        .redes-sociales {
+            display: flex;
+            justify-content: center;
+            height: 17vh;
+            width: 7vh;
+          }
+      }
+  }
