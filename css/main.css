@@ -176,6 +176,9 @@ main .menu .producto-galeria img:hover {
   animation-duration: 1s;
 }
 
+footer {
+  margin-top: 1.5rem;
+}
 footer .redes-sociales-fija {
   display: flex;
   justify-content: center;
@@ -185,6 +188,7 @@ footer .redes-sociales-fija {
   width: 16rem;
   height: auto;
   position: fixed;
+  gap: 1rem;
 }
 footer .redes-sociales-fija img {
   width: 5rem;
@@ -193,13 +197,20 @@ footer .redes-sociales-fija p {
   display: flex;
   background-color: white;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 14px;
   align-items: center;
+  width: 16rem;
+  height: 2.5rem;
+  margin-top: 1rem;
 }
 footer .footer-redes {
   display: none;
   justify-content: center;
   gap: 1rem;
+}
+footer .footer-redes .redes-sociales img {
+  height: 7vh;
+  width: 7vh;
 }
 
 /* Pagina de contacto*/
