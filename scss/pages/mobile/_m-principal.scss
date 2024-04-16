@@ -52,19 +52,22 @@
       }
   }
   footer {
-    margin-top: 0;
+    margin-top: 10px;
     @include flex(flex, center);
-    gap: 2rem;
     .footer-texto {
         display: none;
       }
       .footer-redes-si {
         @include flex(flex, center);
-        gap: 1rem;
+        gap: 10px;
         .redes-sociales {
           @include flex(flex, center);
-            height: 17vh;
-            width: 7vh;
+          width: 70px;
+          a{
+            img{
+              width: 60px;
+            }
+          }
           }
       }
   }

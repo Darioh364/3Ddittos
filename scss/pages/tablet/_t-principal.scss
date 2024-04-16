@@ -93,7 +93,7 @@ main{
 }
 footer{
   @include flex(flex, right);
-  height: 5rem;
+  margin-top: 10px;
   .footer-texto{
     display: flex;
     flex-direction: column;
@@ -106,10 +106,16 @@ footer{
   }
   .footer-redes-si{
     display: flex;
-    gap: 1.5rem;
     width: 30%;
     .redes-sociales{
       display: flex;
+      width: 100%;
+      align-items: center;
+      a{
+        img{
+          width: 50px;
+        }
+      }
     }
   }
 }

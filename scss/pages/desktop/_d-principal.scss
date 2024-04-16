@@ -105,13 +105,20 @@ footer{
     .footer-redes-si{
         display: flex;
         width: 30%;
-        gap: 1.5rem;
+        justify-content: end;
         p{
             @include flex(flex, right);
             margin-right: 10%;
         }
         .redes-sociales{
             display: flex;
+            align-items: center;
+            height: 100%;
+            a{
+                img{
+                    width: 50px;
+                }
+            }
         }
     }
 }
