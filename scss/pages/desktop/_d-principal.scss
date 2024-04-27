@@ -8,7 +8,7 @@ main{
     .layout{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr) 5vh 2vh 5vh 10rem;
+    grid-template-rows: 130px 1fr 5vh 2vh 5vh 10rem;
     grid-gap: 10px;
     .grid-item{
         width: 100%;
