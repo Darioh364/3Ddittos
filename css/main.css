@@ -114,7 +114,7 @@ footer {
   justify-content: center;
   margin-top: 1.7rem;
 }
-footer .footer-texto {
+footer .footer-texto-principal {
   display: none;
 }
 footer .footer-redes-si {
@@ -180,7 +180,7 @@ main .menu .producto-galeria img {
   border-radius: 20px;
 }
 main .menu .producto-galeria img:hover {
-  animation-name: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-name: pulse;
   animation-duration: 1s;
 }
 
@@ -207,6 +207,9 @@ footer .redes-sociales-fija p {
   width: 16rem;
   height: 2.5rem;
   margin-top: 1rem;
+}
+footer .footer-texto {
+  display: block;
 }
 footer .footer-redes {
   display: none;
@@ -259,10 +262,15 @@ main .contenedor-1 .contenedor-2 form .entrada-grande input {
 }
 main .contenedor-1 .contenedor-2 form .boton {
   margin-top: 1rem;
+  margin-bottom: 4rem;
   margin-left: 5%;
   font-size: 1.2rem;
 }
 main .contenedor-1 .imagen-contactos {
+  display: none;
+}
+
+footer .footer-texto-contacto {
   display: none;
 }
 
@@ -371,13 +379,13 @@ main .contenedor-1 .imagen-contactos {
     justify-content: right;
     margin-top: 10px;
   }
-  footer .footer-texto {
+  footer .footer-texto-principal {
     display: flex;
     flex-direction: column;
     inline-size: none;
     width: 70%;
   }
-  footer .footer-texto p {
+  footer .footer-texto-principal p {
     display: flex;
     justify-content: right;
     margin-right: 7%;
@@ -406,6 +414,9 @@ main .contenedor-1 .imagen-contactos {
     display: flex;
     width: 50%;
   }
+  main .contenedor-1 .contenedor-2 form .boton {
+    margin-bottom: 0;
+  }
   main .contenedor-1 .imagen-contactos {
     display: flex !important;
     justify-content: center;
@@ -424,13 +435,13 @@ main .contenedor-1 .imagen-contactos {
     justify-content: right;
     height: 5rem;
   }
-  footer .footer-texto {
+  footer .footer-texto-contacto {
     display: flex;
     flex-direction: column;
     inline-size: none;
     width: 70%;
   }
-  footer .footer-texto p {
+  footer .footer-texto-contacto p {
     display: flex;
     justify-content: right;
     margin-right: 7%;
@@ -592,13 +603,13 @@ main .contenedor-1 .imagen-contactos {
     justify-content: right;
     height: 5rem;
   }
-  footer .footer-texto {
+  footer .footer-texto-principal {
     display: flex;
     flex-direction: column;
     inline-size: none;
     width: 70%;
   }
-  footer .footer-texto p {
+  footer .footer-texto-principal p {
     display: flex;
     justify-content: right;
     margin-right: 10%;
@@ -633,6 +644,9 @@ main .contenedor-1 .imagen-contactos {
     display: flex;
     width: 50%;
   }
+  main .contenedor-1 .contenedor-2 form .boton {
+    margin-bottom: 0;
+  }
   main .contenedor-1 .imagen-contactos {
     display: flex;
     justify-content: center;
@@ -651,13 +665,13 @@ main .contenedor-1 .imagen-contactos {
     justify-content: right;
     height: 5rem;
   }
-  footer .footer-texto {
+  footer .footer-texto-contacto {
     display: flex;
     flex-direction: column;
     inline-size: none;
     width: 70%;
   }
-  footer .footer-texto p {
+  footer .footer-texto-contacto p {
     display: flex;
     justify-content: right;
     margin-right: 10%;

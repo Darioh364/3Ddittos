@@ -42,6 +42,7 @@ main{
                 }
                 .boton {
                     margin-top: 1rem;
+                    margin-bottom: 4rem;
                     margin-left: 5%;
                     font-size: 1.2rem;
                   }
@@ -50,5 +51,10 @@ main{
         .imagen-contactos{
             display:none;
           }        
-      }
+    }
+}
+footer{
+    .footer-texto-contacto{
+        display: none;
+    }
 }

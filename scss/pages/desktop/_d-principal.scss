@@ -101,7 +101,7 @@ main{
 footer{
     @include flex(flex, right);
     height: 5rem;
-    .footer-texto{
+    .footer-texto-principal{
         display: flex;
         flex-direction: column;
         inline-size: none;

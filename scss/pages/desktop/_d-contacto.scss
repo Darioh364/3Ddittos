@@ -8,6 +8,11 @@
         .contenedor-2{
             display: flex;
             width: 50%;
+            form{
+                .boton{
+                    margin-bottom: 0;
+                }
+            }
         }
         .imagen-contactos{
             @include flex(flex, center);
@@ -27,7 +32,7 @@
 footer{
     @include flex(flex, right);
     height: 5rem;
-    .footer-texto{
+    .footer-texto-contacto{
         display: flex;
         flex-direction: column;
         inline-size: none;

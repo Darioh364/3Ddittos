@@ -92,7 +92,7 @@ main{
 footer{
   @include flex(flex, right);
   margin-top: 10px;
-  .footer-texto{
+  .footer-texto-principal{
     display: flex;
     flex-direction: column;
     inline-size: none;
