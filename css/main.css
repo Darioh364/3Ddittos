@@ -73,7 +73,8 @@
 .layout .carousel-container img {
   margin-top: 1rem;
   height: 30vh;
-  width: 10vh;
+  aspect-ratio: 4/1;
+  object-fit: cover;
 }
 .layout .carousel-container .carousel-inner {
   height: 16rem;
@@ -207,7 +208,6 @@ footer .redes-sociales-fija p {
   width: 16rem;
   height: 2.5rem;
   margin-top: 1rem;
-  animation-duration: 1s;
 }
 footer .footer-texto {
   display: block;
